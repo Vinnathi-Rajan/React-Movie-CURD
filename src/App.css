@@ -1,38 +1,134 @@
-.App {
+/* General body and container styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f6f8; /* Light gray background */
+}
+
+/* Header styling */
+.app-header {
+  background-color: #34495e; /* Dark blue-gray */
+  color: white;
+  padding: 10px; /* Adjusted padding for better spacing */
   text-align: center;
+  font-size: 16px; /* Reduced size */
+  border-bottom: 3px solid #2c3e50; /* Slightly darker border */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin-bottom: 40px; /* Space below header */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Container styling */
+.container {
+  width: 80%;
+  margin: 0 auto; /* Center container */
+  padding: 20px;
+  background-color: #ffffff; /* White background for the container */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Navigation buttons */
+.nav-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px; /* Space below navigation buttons */
+}
+
+.nav-button {
+  padding: 12px 25px;
+  background: linear-gradient(135deg, #3498db, #2980b9); /* Gradient background */
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  border: 1px solid transparent; /* Invisible border, but useful for hover effect */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  transition: background 0.4s ease, transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.5px; /* Slightly increased letter-spacing for a cleaner look */
+  margin-right: 15px; /* Space between buttons */
+}
+
+.nav-button:last-child {
+  margin-right: 0; /* Remove margin from the last button */
+}
+
+.nav-button:hover {
+  background: linear-gradient(135deg, #2980b9, #1a5276); /* Darker gradient on hover */
+  transform: translateY(-3px); /* Slight lift on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+  border-color: #1a5276; /* Add a visible border on hover */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .nav-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-button {
+    margin: 10px 0; /* Increased vertical margin between buttons */
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+/* Form styling */
+form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 15px; /* Added gap between form elements */
+}
+
+input {
+  padding: 12px;
+  border: 1px solid #ced4da; /* Light gray border */
+  border-radius: 6px;
+}
+
+button {
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #27ae60; /* Green */
   color: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #2ecc71; /* Lighter green */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 14px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0; /* Light gray border */
+}
+
+th {
+  background-color: #f9f9f9; /* Light gray background for headers */
+  font-weight: 600;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .nav-buttons {
+    flex-direction: column;
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  .nav-button {
+    margin: 5px 0;
   }
 }

@@ -1,0 +1,138 @@
+/* Global Blueprint CSS imports */
+@import "~@blueprintjs/core/lib/css/blueprint.css";
+
+/* Global Style */
+body {
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #f5f8fa;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Movie Component Styles */
+.Movie {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Styles */
+.bp4-html-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.bp4-html-table th, 
+.bp4-html-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.bp4-html-table th {
+    background-color: #f4f4f4;
+    color: #394b59;
+    font-weight: 600;
+}
+
+.bp4-html-table td {
+    background-color: #fff;
+    color: #5c7080;
+}
+
+.bp4-html-table tbody tr:hover {
+    background-color: #f4f8fc;
+    cursor: pointer;
+}
+
+/* Table Footer Input Styles */
+tfoot td {
+    padding-top: 15px;
+    background-color: transparent;
+}
+
+tfoot td input.bp4-input {
+    width: 100%;
+    border-radius: 4px;
+}
+
+/* Button Group */
+tfoot td .bp4-button {
+    width: 100%;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+tfoot td .bp4-button.bp4-intent-success {
+    background-color: #0f9960;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+tfoot td .bp4-button.bp4-intent-success:hover {
+    background-color: #0e8b56;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Action Buttons */
+td .bp4-button.bp4-intent-primary,
+td .bp4-button.bp4-intent-danger {
+    border: none;
+    padding: 10px 20px; /* Increased padding for a better look */
+    border-radius: 8px; /* More rounded corners */
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+td .bp4-button.bp4-intent-primary {
+    background: linear-gradient(135deg, #137cbd, #00629b);
+    color: white;
+    margin-right: 12px; /* Space between buttons */
+}
+
+td .bp4-button.bp4-intent-primary:hover {
+    background: linear-gradient(135deg, #1678bd, #0581c7);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+td .bp4-button.bp4-intent-danger {
+    background: linear-gradient(135deg, #d33c3c, #b21f1f);
+    color: white;
+}
+
+td .bp4-button.bp4-intent-danger:hover {
+    background: linear-gradient(135deg, #e04848, #c32a2a);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+/* Add hover effects */
+.bp4-button:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+/* Responsive Table */
+@media only screen and (max-width: 768px) {
+    .Movie {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .bp4-html-table th,
+    .bp4-html-table td {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .bp4-html-table tbody td .bp4-button {
+        font-size: 12px;
+    }
+}

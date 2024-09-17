@@ -1,0 +1,123 @@
+{
+    "Movie": [
+      {
+        "movie_id": 1,
+        "title": "The Shawshank Redemption",
+        "genre": "Drama",
+        "duration": 142,
+        "release_date": "1994-10-14",
+        "director": "Frank Darabont",
+        "rating": 9.0
+      },
+      {
+        "movie_id": 2,
+        "title": "The Godfather",
+        "genre": "Crime, Drama",
+        "duration": 175,
+        "release_date": "1972-03-24",
+        "director": "Francis Ford Coppola",
+        "rating": 9.3
+      },
+      {
+        "movie_id": 3,
+        "title": "The Dark Knight",
+        "genre": "Action, Crime, Drama",
+        "duration": 152,
+        "release_date": "2008-07-18",
+        "director": "Christopher Nolan",
+        "rating": 9.5
+      }
+    ],
+    "Screening": [
+      {
+        "screening_id": 1,
+        "movie_id": 1,
+        "screen_id": 1,
+        "screening_type": "2D",
+        "screening_time": "2024-06-23 18:00:00"
+      },
+      {
+        "screening_id": 2,
+        "movie_id": 2,
+        "screen_id": 2,
+        "screening_type": "2D",
+        "screening_time": "2024-06-23 20:30:00"
+      },
+      {
+        "screening_id": 3,
+        "movie_id": 3,
+        "screen_id": 1,
+        "screening_type": "IMAX",
+        "screening_time": "2024-06-24 15:00:00"
+      }
+    ],
+    "Selling": [
+      {
+        "sale_id": 1,
+        "screening_id": 1,
+        "customer_id": 101,
+        "sale_date": "2024-06-23 16:30:00",
+        "total_amount": 25.00,
+        "ticket_quantity": 2
+      },
+      {
+        "sale_id": 2,
+        "screening_id": 2,
+        "customer_id": 102,
+        "sale_date": "2024-06-23 19:45:00",
+        "total_amount": 30.00,
+        "ticket_quantity": 1
+      },
+      {
+        "sale_id": 3,
+        "screening_id": 3,
+        "customer_id": 103,
+        "sale_date": "2024-06-24 14:00:00",
+        "total_amount": 40.00,
+        "ticket_quantity": 2
+      }
+    ],
+    "SeatingBooking": [
+      {
+        "booking_id": 1,
+        "screening_id": 1,
+        "seat_id": 101,
+        "customer_id": 101,
+        "booking_date": "2024-06-23 15:45:00",
+        "booking_status": "confirmed"
+      },
+      {
+        "booking_id": 2,
+        "screening_id": 1,
+        "seat_id": 102,
+        "customer_id": 102,
+        "booking_date": "2024-06-23 15:50:00",
+        "booking_status": "confirmed"
+      },
+      {
+        "booking_id": 3,
+        "screening_id": 2,
+        "seat_id": 201,
+        "customer_id": 102,
+        "booking_date": "2024-06-23 19:30:00",
+        "booking_status": "pending"
+      },
+      {
+        "booking_id": 4,
+        "screening_id": 3,
+        "seat_id": 101,
+        "customer_id": 103,
+        "booking_date": "2024-06-24 13:45:00",
+        "booking_status": "confirmed"
+      },
+      {
+        "booking_id": 5,
+        "screening_id": 3,
+        "seat_id": 102,
+        "customer_id": 103,
+        "booking_date": "2024-06-24 13:50:00",
+        "booking_status": "confirmed"
+      }
+    ]
+  }
+  
